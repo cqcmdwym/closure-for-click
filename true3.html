@@ -1,19 +1,19 @@
 <body>
-        <ul>
-            <li>first</li>
-            <li>second</li>
-            <li>third</li>
-            <li>forth</li>
-            <li>fifth</li>
-            <li>sixth</li>
-        </ul>
-        <script>
-            var lis = document.getElementsByTagName('li');
-            for(var i=0;i<lis.length;++i){
-                lis[i].number = i;
-                lis[i].onclick = function(){
-                    alert(this.number)
-                }
+    <ul>
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+        <li>forth</li>
+        <li>fifth</li>
+        <li>sixth</li>
+    </ul>
+    <script>
+        var lis = document.getElementsByTagName('li');
+        for (var i = 0; i < lis.length; ++i) {
+            lis[i].number = i;
+            lis[i].onclick = function () {
+                alert(this.number)
             }
-        </script>
-    </body>
+        }
+    </script>
+</body>
