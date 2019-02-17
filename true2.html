@@ -9,10 +9,12 @@
     </ul>
     <script>
         var lis = document.getElementsByTagName('li');
-        for (let i = 0; i < lis.length; ++i) {
-            lis[i].onclick = function () {
-                alert(i);
-            }
+        for (var i = 0; i < lis.length; ++i) {
+            (function (i) {
+                lis[i].onclick = function () {
+                    alert(i);
+                }
+            })(i);
         }
     </script>
 </body>
